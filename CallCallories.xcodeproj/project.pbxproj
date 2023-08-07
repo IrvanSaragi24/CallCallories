@@ -11,6 +11,8 @@
 		E29F45FF2A80B880009D275C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F45FE2A80B880009D275C /* ContentView.swift */; };
 		E29F46012A80B880009D275C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29F46002A80B880009D275C /* Assets.xcassets */; };
 		E29F46042A80B880009D275C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29F46032A80B880009D275C /* Preview Assets.xcassets */; };
+		E29F460D2A80B8DC009D275C /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E29F460B2A80B8DC009D275C /* FoodModel.xcdatamodeld */; };
+		E29F460F2A80B9E8009D275C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F460E2A80B9E8009D275C /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E29F45FE2A80B880009D275C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E29F46002A80B880009D275C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29F46032A80B880009D275C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E29F460C2A80B8DC009D275C /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		E29F460E2A80B9E8009D275C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		E29F45FB2A80B880009D275C /* CallCallories */ = {
 			isa = PBXGroup;
 			children = (
+				E29F460A2A80B8AF009D275C /* DataModel */,
 				E29F45FC2A80B880009D275C /* CallCalloriesApp.swift */,
 				E29F45FE2A80B880009D275C /* ContentView.swift */,
 				E29F46002A80B880009D275C /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				E29F46032A80B880009D275C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E29F460A2A80B8AF009D275C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E29F460B2A80B8DC009D275C /* FoodModel.xcdatamodeld */,
+				E29F460E2A80B9E8009D275C /* DataController.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29F45FF2A80B880009D275C /* ContentView.swift in Sources */,
+				E29F460F2A80B9E8009D275C /* DataController.swift in Sources */,
 				E29F45FD2A80B880009D275C /* CallCalloriesApp.swift in Sources */,
+				E29F460D2A80B8DC009D275C /* FoodModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E29F460B2A80B8DC009D275C /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E29F460C2A80B8DC009D275C /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = E29F460C2A80B8DC009D275C /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E29F45F12A80B880009D275C /* Project object */;
 }
